@@ -8,11 +8,15 @@ header {
     background: url('./sunny.jpg') center/cover no-repeat;
     height: 100vh;
     display: flex;
-    align-items: center;
     padding-left: 20px;
-    color: #fff;
-    text-align: right;
+    color: #f1f6f9;
 }
+header p{
+    text-align: right;
+    text-shadow: #333;
+    color: #333;
+}
+
 
 main {
     padding: 40px;
@@ -26,7 +30,13 @@ main {
 
 #about-me img {
     max-width: 50%;
+    max-height: auto;
     padding-right: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    opacity: 0.5;
+    object-fit: fill;
+    float:left;
 }
 
 #about-me p {
@@ -42,6 +52,7 @@ main {
 #contacts img {
     margin: 10px 0;
     max-width: 100px;
+    float:right;
 }
 
 footer {
