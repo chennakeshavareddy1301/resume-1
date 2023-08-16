@@ -4,32 +4,37 @@ body, h1, h2, h3, p, ul, li {
     padding: 0;
 }
 
-/* Set background image and style for the header */
-header {
-    background: url('./sunny.jpg') no-repeat center center;
-    background-size: cover;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
+/* Set background color and font styles */
+body {
+    font-family: 'Markazi Text', serif;
+    background-color: #f2f2f2;
+    color: #333;
 }
 
-/* Style for navigation links */
+/* Style for navigation bar */
 nav {
-    background-color: rgba(0, 0, 0, 0.8);
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: flex-end;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
     padding: 10px;
+}
+
+nav img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+nav p {
+    margin-right: auto;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    margin: 0 15px;
+    margin: 0 10px;
     transition: color 0.3s ease-in-out;
 }
 
@@ -37,8 +42,11 @@ nav a:hover {
     color: #f39c12;
 }
 
-/* Style for main content */
+/* Main content layout */
 main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 20px;
 }
 
@@ -46,6 +54,7 @@ main {
     display: flex;
     align-items: center;
     gap: 20px;
+    text-align: center;
     margin-bottom: 40px;
 }
 
@@ -55,7 +64,7 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Style for contact icons */
+/* Contact icons */
 #contacts {
     display: flex;
     justify-content: center;
@@ -74,28 +83,10 @@ main {
     transform: scale(1.1);
 }
 
-/* Style for footer */
+/* Footer */
 footer {
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
     text-align: center;
     padding: 10px;
-}
-
-/* Keyframe animations */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-/* Apply animations */
-header p,
-#about img,
-#contacts a img,
-footer p {
-    animation: fadeIn 1s ease-in-out;
 }
